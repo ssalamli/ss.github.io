@@ -1,82 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <!-- OneTrust Cookies Consent Notice start for incountry.com -->
-<script type="text/javascript" src="https://cdn.cookielaw.org/consent/eadd3140-6858-4144-9699-9b542333e688/OtAutoBlock.js" ></script>
-<script src="https://cdn.cookielaw.org/consent/eadd3140-6858-4144-9699-9b542333e688/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="eadd3140-6858-4144-9699-9b542333e688-test" ></script>
-<script type="text/javascript">
-function OptanonWrapper() { }
-</script>
-<!-- OneTrust Cookies Consent Notice end for incountry.com -->
-    <!-- OneTrust Cookies Consent Notice start for incountry.com -->
-<script type="text/javascript" src="https://cdn.cookielaw.org/consent/eadd3140-6858-4144-9699-9b542333e688-test/OtAutoBlock.js" ></script>
-<script src="https://cdn.cookielaw.org/consent/eadd3140-6858-4144-9699-9b542333e688-test/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="eadd3140-6858-4144-9699-9b542333e688-test" ></script>
-<script type="text/javascript">
-function OptanonWrapper() { }
-</script>
-<!-- OneTrust Cookies Consent Notice end for incountry.com -->
-<script type="text/javascript">
-   function setCookie(cname, cvalue, exdays) {
-  const d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  let expires = "expires="+d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-  let name = cname + "=";
-  let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-function checkCookie() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
-  }
-}
-</script>
-   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Site</title>
-    <style>
-        /* Add some basic styling to center the text */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        
-        /* Style the heading */
-        h1 {
-            font-size: 36px;
-            text-align: center;
-            color: #333;
-        }
-    </style>
-</head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <br>
-    <br>
-    <br>
-<div id="ot-sdk-cookie-policy"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>cookies on html website example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>8bityard - cookies on html website example</h1>
+      <p>Where does it come from?</p>
+ 
+      <p>
+        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+      </p>
+ 
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt nam,
+        commodi velit quia id dolore cum sapiente repellendus odio magnam
+        quibusdam neque eius qui hic esse numquam modi sint inventore mollitia,
+        accusantium animi ea omnis? Alias nihil tempore illo magni?
+      </p>
+ 
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, soluta.
+      </p>
+ 
+      <p>
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures.
+      </p>
+ 
+      <p>
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </p>
+    </div>
+ 
+    <div class="cookie-container">
+      <p>
+        We use cookies in this website to give you the best experience on our
+        site and show you relevant ads. To find out more, read our
+        <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+      </p>
+ 
+      <button class="cookie-btn">Okay</button>
+    </div>
+ 
+    <script src="cookie.js"></script>
+  </body>
 </html>
